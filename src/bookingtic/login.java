@@ -5,15 +5,11 @@
  */
 package bookingtic;
 
-import java.util.Scanner;
-
 public class login 
 {
     public static void main(String[] args) 
     {
         mainmain main = new mainmain();
         main.mainmain();
-    }
-
-    
+    }    
 }
