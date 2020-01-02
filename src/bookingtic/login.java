@@ -5,10 +5,44 @@
  */
 package bookingtic;
 
-/**
- *
- * @author hp
- */
-public class login {
+import java.util.Scanner;
+
+public class login 
+{
+    static String init;
+    static Scanner sc = new Scanner(System.in);
+    
+    public static void main(String[] args) 
+    {
+        System.out.println("==========MASUK==========");
+        login();
+    }
+
+    public static void login() 
+    {
+        
+        System.out.print("Initial: ");
+        init = sc.next();
+        if (init.equals("admin"))
+        {
+            jadwal obj = new jadwal();
+            obj.jadwal();
+        }
+        else
+        {
+            System.out.println("=====INITIAL SALAH=====");
+            System.out.println("Initial: ");
+            init = sc.next();
+            if (init.equals("admin"))
+            {
+                jadwal obj = new jadwal();
+                obj.jadwal();
+            }
+            else
+            {
+                login();
+            }
+        }
+    }
     
 }
